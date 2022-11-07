@@ -11,8 +11,8 @@
 </script>
 
 <div class="flex justify-between">
-  <a target="_blank" href={link.url}> {link.text} </a>
-  <button class="h-6 w-6  text-center" on:click={deleteLink}>x</button>
+  <a class="text-base-content" target="_blank" href={link.url}> {link.text} </a>
+  <button class="h-6 w-6 text-base-content text-center" on:click={deleteLink}>x</button>
 </div>
 
 <style>

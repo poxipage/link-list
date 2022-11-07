@@ -29,7 +29,7 @@
 </script>
 
 <div class="w-full h-full overflow-autox">
-  <p class="text-xl"> {$title} </p>
+  <p class="text-xl text-base-content"> {$title} </p>
   {#each $links as link}
     <Link on:delete={() => deleteLink(link)} {link} />
   {/each}
@@ -38,10 +38,10 @@
     <div class=" flex flex-col">
       <input class="border-2 w-48 m-1" bind:value={newText} placeholder="text" type="text">
       <input class="border-2 w-48 m-1" bind:value={newLink} placeholder="link" type="text">
-      <button class="h-8 w-20 m-1 bg-slate-200 border-solid border-2 border-black rounded" on:click={addLink}>Add</button>
+      <button class="w-12 mt-1 btn btn-primary border-base-content border-2" on:click={addLink}>Add</button>
     </div>
   {:else}
-    <button class="h-8 w-20 m-1 bg-slate-200 border-solid border-2 border-black rounded" on:click={() => showInputs = !showInputs}>Add link</button>
+    <button class="mt-1 btn btn-primary border-primary-content border-2" on:click={() => showInputs = !showInputs}>Add link</button>
   {/if}
 </div>
     
